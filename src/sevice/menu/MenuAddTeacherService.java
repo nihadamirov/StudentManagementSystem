@@ -2,6 +2,7 @@ package sevice.menu;
 
 import bean.Config;
 import bean.Teacher;
+import menu.FileUtility;
 import servise.menu.inter.MenuAddTeacherServiceInter;
 
 import java.util.Scanner;
@@ -23,5 +24,7 @@ public class MenuAddTeacherService implements MenuAddTeacherServiceInter {
 
         Config.instance().appendTeacher(t);
         System.out.println("teacher added");
+
+        FileUtility.writeObjectToFile(Config.instance(), "app.obj");
     }
 }
