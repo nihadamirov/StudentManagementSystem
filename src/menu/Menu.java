@@ -12,6 +12,7 @@ public enum Menu {
     ADD_STUDENT(4, "Add student", new MenuAddStudentService()),
     SHOW_ALL_TEACHER(5, "Show all teachers", new MenuShowTeacherService()),
     SHOW_ALL_STUDENT(6, "Show all students", new MenuShowStudentService()),
+    EXIT(0, "Exit", new MenuExit()),
     UNKNOW;
 
     private int number;
