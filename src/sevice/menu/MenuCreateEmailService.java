@@ -1,6 +1,6 @@
 package sevice.menu;
 
-import academy.Email;
+import bean.Email;
 import servise.menu.inter.MenuCreateEmailServiceInter;
 
 import java.util.Scanner;
